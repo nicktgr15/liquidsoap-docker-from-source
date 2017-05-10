@@ -1,7 +1,5 @@
 FROM savonet/liquidsoap-deps
 
-MAINTAINER The Savonet Team <savonet-users@lists.sourceforge.net>
-
 USER opam
 
 WORKDIR /tmp
