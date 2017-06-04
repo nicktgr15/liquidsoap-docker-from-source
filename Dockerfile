@@ -21,3 +21,7 @@ USER root
 RUN make install
 
 USER opam
+
+RUN openssl req -x509 -newkey rsa:4096 -sha256 -nodes -keyout /tmp/server.key -out /tmp/server.crt -subj "/CN=localhost" -days 3650
+
+COPY plan.liq /plan.liq
